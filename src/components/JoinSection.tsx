@@ -96,7 +96,7 @@ const JoinSection = () => {
               <p className="text-muted-foreground mb-6">
                 Think you've got what it takes? Show us your code.
               </p>
-              <a href="https://x.com" target="_blank">
+              <a href="/recruitment" target="_blank" rel="noopener noreferrer">
                 <Button
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan font-mono w-full sm:w-auto"

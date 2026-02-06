@@ -1,19 +1,14 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "../ThemeToggle";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: "About", href: "#about" },
-  { name: "Events", href: "#events" },
-  { name: "Achievements", href: "#achievements" },
-  { name: "Projects", href: "#projects" },
-  { name: "Team", href: "#founders" },
   { name: "Join Us", href: "#join" },
   { name: "Contact", href: "#contact" },
 ];
 
-const Navbar = () => {
+const NavbarR = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -21,10 +16,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
+          <a href="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 diamond-shape bg-primary group-hover:glow-cyan transition-all duration-300" />
             <span className="font-mono font-bold text-lg text-glow-cyan">
-              Team Dimond
+              Team Diamond
             </span>
           </a>
 
@@ -81,4 +76,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarR;
