@@ -48,7 +48,7 @@ const JoinSection = () => {
           <div>
             <h3 className="text-xl font-mono font-bold mb-6 flex items-center gap-2">
               <Sparkles className="text-primary" size={20} />
-              Why Join Team Dimond?
+              Why Join Team Diamond?
             </h3>
 
             <div className="grid gap-4">

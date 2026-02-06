@@ -43,7 +43,7 @@ const FoundersSection = () => {
               Founded in a dorm room at 1 AM during a debug session that turned into a breakthrough. 
               Three strangers bonded over cold pizza and a shared dream: to build things that matter. 
               What started as a spontaneous team-up {" "}
-              <span className="text-primary font-semibold">Team Dimond</span> — 
+              <span className="text-primary font-semibold">Team Diamond</span> — 
               named after the unbreakable bonds we formed under pressure.
             </p>
           </div>

@@ -8,40 +8,40 @@ const socials = [
     name: "Discord",
     icon: MessageCircle,
     url: "#",
-    handle: "Team Dimond",
+    handle: "Team Diamond",
     color: "hover:text-indigo-400",
   },
   {
     name: "GitHub",
     icon: Github,
     url: "#",
-    handle: "@team-dimond",
+    handle: "@team-diamond",
     color: "hover:text-foreground",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
     url: "#",
-    handle: "Team Dimond",
+    handle: "Team Diamond",
     color: "hover:text-blue-400",
   },
   {
     name: "Twitter",
     icon: Twitter,
     url: "#",
-    handle: "@teamdimond",
+    handle: "@teamdiamond",
     color: "hover:text-sky-400",
   },
   {
     name: "Instagram",
     icon: Instagram,
     url: "#",
-    handle: "@teamdimond",
+    handle: "@teamdiamond",
     color: "hover:text-purple-300",
   }
 ];
 
-const email = "hello@teamdimond.dev";
+const email = "hello@teamdiamond.dev";
 
 const ContactSection = () => {
   const [copied, setCopied] = useState(false);

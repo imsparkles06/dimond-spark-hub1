@@ -32,7 +32,7 @@ const HeroSection = () => {
           {/* Main Title with Glitch Effect */}
           <h1 
             className="glitch text-5xl md:text-7xl lg:text-8xl font-mono font-bold mb-6"
-            data-text="TEAM DIMOND"
+            data-text="TEAM DIAMOND"
           >
             <span className="text-glow-cyan">TEAM DIMOND</span>
           </h1>

@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 diamond-shape bg-primary" />
-            <span className="font-mono font-bold text-sm">Team Dimond</span>
+            <span className="font-mono font-bold text-sm">Team Diamond</span>
           </div>
 
           {/* Copyright */}
