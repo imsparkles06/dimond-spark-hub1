@@ -7,22 +7,37 @@ const RecruitmentSection = () => {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    // 1. Capture the form element immediately so we don't lose it during the 'await'
-    const form = e.currentTarget; 
-    
-    setLoading(true);
+  e.preventDefault();
+  const form = e.currentTarget;
+  setLoading(true);
 
-    // ... Your API call or Timer goes here ...
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+  // 1. Get data from form
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
 
+  try {
+    // 2. Send to Vercel API
+    const response = await fetch('/api/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert("Application Initialized. Data secured.");
+      form.reset(); // Clear form
+    } else {
+      throw new Error(result.error || "Submission failed");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Connection Error: Could not upload to mainframe.");
+  } finally {
     setLoading(false);
-    alert("Application initialized.");
-
-    // 2. Clear all inputs
-    form.reset(); 
-  };
+  }
+};
 
   return (
     <section id="join" className="py-20 relative overflow-hidden">
