@@ -7,33 +7,22 @@ const RecruitmentSection = () => {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  const form = e.currentTarget;
-  setLoading(true);
+    e.preventDefault();
+    
+    // 1. Capture the form element immediately so we don't lose it during the 'await'
+    const form = e.currentTarget; 
+    
+    setLoading(true);
 
-  const formData = new FormData(form);
-  const data = Object.fromEntries(formData.entries());
+    // ... Your API call or Timer goes here ...
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-  try {
-    const response = await fetch('/api/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    });
-
-    if (response.ok) {
-      alert("Application successfully logged in the mainframe.");
-      form.reset(); 
-    } else {
-      const result = await response.json();
-      alert(`System Error: ${result.error}`);
-    }
-  } catch (error) {
-    alert("Connection Error: Unable to reach the database.");
-  } finally {
     setLoading(false);
-  }
-};
+    alert("Application initialized.");
+
+    // 2. Clear all inputs
+    form.reset(); 
+  };
 
   return (
     <section id="join" className="py-20 relative overflow-hidden">
