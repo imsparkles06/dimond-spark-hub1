@@ -34,7 +34,7 @@ const achievements = [
 const funStats = [
   { icon: Code, label: "Lines of Code", value: "127,843" },
   { icon: Coffee, label: "Cups of Coffee", value: "2,547" },
-  { icon: Trophy, label: "Total Prize Money", value: "$52,500" },
+  { icon: Trophy, label: "Total Prize Money", value: "₹52,500" },
 ];
 
 const AchievementsSection = () => {

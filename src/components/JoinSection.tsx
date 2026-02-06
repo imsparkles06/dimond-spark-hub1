@@ -96,13 +96,16 @@ const JoinSection = () => {
               <p className="text-muted-foreground mb-6">
                 Think you've got what it takes? Show us your code.
               </p>
-              <Button
+              <a href="https://x.com" target="_blank">
+                <Button
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan font-mono w-full sm:w-auto"
-              >
+                >
                 <Github className="mr-2" size={20} />
                 Apply via GitHub
-              </Button>
+                </Button>
+              </a>
+              
               <p className="text-xs text-muted-foreground mt-4">
                 We'll review your repos and reach out within 48 hours
               </p>

@@ -25,7 +25,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-8 animate-pulse-glow">
             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
             <span className="text-sm font-mono text-primary">
-              Currently hacking at HackTheNorth 2024 — 12h remaining!
+              Coming Soon!
             </span>
           </div>
 
@@ -77,7 +77,7 @@ const HeroSection = () => {
             {[
               { value: "15+", label: "Hackathons" },
               { value: "8", label: "Wins" },
-              { value: "$50K+", label: "Prize Money" },
+              { value: "₹50K+", label: "Prize Money" },
               { value: "100K+", label: "Lines of Code" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">

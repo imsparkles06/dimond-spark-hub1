@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Github, Linkedin, Twitter, MessageCircle, Mail, Check, Copy } from "lucide-react";
+import { Github, Linkedin, Twitter, MessageCircle, Mail, Check, Copy, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
@@ -32,6 +32,13 @@ const socials = [
     handle: "@teamdimond",
     color: "hover:text-sky-400",
   },
+  {
+    name: "Instagram",
+    icon: Instagram,
+    url: "#",
+    handle: "@teamdimond",
+    color: "hover:text-purple-300",
+  }
 ];
 
 const email = "hello@teamdimond.dev";
@@ -80,7 +87,7 @@ const ContactSection = () => {
           </div>
 
           {/* Social Links */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {socials.map((social) => {
               const Icon = social.icon;
               return (

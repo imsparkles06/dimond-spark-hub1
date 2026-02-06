@@ -2,26 +2,26 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 
 const founders = [
   {
-    name: "Alex Chen",
+    name: "Shourya Parashar",
     role: "Lead Developer",
-    avatar: "AC",
+    avatar: "SP",
     quote: "Code is poetry, and hackathons are our slam events.",
-    socials: { github: "#", linkedin: "#", twitter: "#" },
+    socials: { github: "https://github.com/im-shourya", linkedin: "https://www.linkedin.com/in/shourya-parashar-2543a4388/", twitter: "#" },
   },
-  {
-    name: "Maya Patel",
-    role: "UI/UX Wizard",
-    avatar: "MP",
-    quote: "Every pixel tells a story. I make sure ours wins awards.",
-    socials: { github: "#", linkedin: "#", twitter: "#" },
-  },
-  {
-    name: "Jordan Kim",
-    role: "Backend Architect",
-    avatar: "JK",
-    quote: "If the frontend is the face, I'm the brain behind the operation.",
-    socials: { github: "#", linkedin: "#", twitter: "#" },
-  },
+  // {
+  //   name: "Maya Patel",
+  //   role: "UI/UX Wizard",
+  //   avatar: "MP",
+  //   quote: "Every pixel tells a story. I make sure ours wins awards.",
+  //   socials: { github: "#", linkedin: "#", twitter: "#" },
+  // },
+  // {
+  //   name: "Jordan Kim",
+  //   role: "Backend Architect",
+  //   avatar: "JK",
+  //   quote: "If the frontend is the face, I'm the brain behind the operation.",
+  //   socials: { github: "#", linkedin: "#", twitter: "#" },
+  // },
 ];
 
 const FoundersSection = () => {
@@ -40,9 +40,9 @@ const FoundersSection = () => {
               <span className="text-primary font-mono">// Origin Story</span>
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Founded in a dorm room at 3 AM during a debug session that turned into a breakthrough. 
+              Founded in a dorm room at 1 AM during a debug session that turned into a breakthrough. 
               Three strangers bonded over cold pizza and a shared dream: to build things that matter. 
-              What started as a spontaneous team-up at HackMIT 2022 became{" "}
+              What started as a spontaneous team-up {" "}
               <span className="text-primary font-semibold">Team Dimond</span> — 
               named after the unbreakable bonds we formed under pressure.
             </p>
@@ -50,7 +50,7 @@ const FoundersSection = () => {
         </div>
 
         {/* Founders Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
           {founders.map((founder, index) => (
             <div
               key={founder.name}
@@ -78,6 +78,7 @@ const FoundersSection = () => {
                 <div className="flex justify-center gap-4">
                   <a
                     href={founder.socials.github}
+                    target="_blank"
                     className="text-muted-foreground hover:text-primary transition-colors"
                     aria-label="GitHub"
                   >
