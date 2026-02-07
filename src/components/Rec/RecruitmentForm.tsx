@@ -53,11 +53,9 @@ const RecruitmentSection = () => {
         if (error) throw error;
 
         // --- STEP B: Send Email (EmailJS) ---
-        // ✅ YOUR REAL KEYS ARE PRESERVED HERE:
-        const SERVICE_ID = "service_wiu6bd5";   
-        const TEMPLATE_ID = "template_n6wwvck"; 
-        const PUBLIC_KEY = "ctd3uGabQPSENoK2I";   
-
+        const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
         await emailjs.send(
             SERVICE_ID, 
             TEMPLATE_ID, 
