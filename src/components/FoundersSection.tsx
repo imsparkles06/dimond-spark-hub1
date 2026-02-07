@@ -8,13 +8,13 @@ const founders = [
     quote: "Code is poetry, and hackathons are our slam events.",
     socials: { github: "https://github.com/im-shourya", linkedin: "https://www.linkedin.com/in/shourya-parashar-2543a4388/", twitter: "#" },
   },
-  // {
-  //   name: "Maya Patel",
-  //   role: "UI/UX Wizard",
-  //   avatar: "MP",
-  //   quote: "Every pixel tells a story. I make sure ours wins awards.",
-  //   socials: { github: "#", linkedin: "#", twitter: "#" },
-  // },
+  {
+    name: "Anmol",
+    role: "AI/ML",
+    avatar: "AS",
+    quote: "The best way to predict the future is to invent it.",
+    socials: { github: "#", linkedin: "#", twitter: "#" },
+  },
   // {
   //   name: "Jordan Kim",
   //   role: "Backend Architect",
@@ -50,7 +50,7 @@ const FoundersSection = () => {
         </div>
 
         {/* Founders Grid */}
-        <div className="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {founders.map((founder, index) => (
             <div
               key={founder.name}

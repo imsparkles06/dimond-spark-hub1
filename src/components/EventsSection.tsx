@@ -25,7 +25,7 @@ const events: Event[] = [
     date: "Dec 27-28, 2025",
     location: "Helpers, Virtual",
     status: "completed",
-    prize: "$5,000",
+    prize: "₹5,000",
     position: "Best UX",
   },
   // {
