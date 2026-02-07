@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FoundersSection from "@/components/FoundersSection";
@@ -12,6 +13,14 @@ import Footer from "@/components/Footer";
 import RecruitmentSection from "@/components/Rec/RecruitmentForm";
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "Team Diamond - Recruitment";
+    
+    // Reset when leaving
+    return () => {
+      document.title = "Team Diamond";
+    };
+  }, []);
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* <Navbar />
